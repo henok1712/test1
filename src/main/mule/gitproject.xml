@@ -11,5 +11,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:listener doc:name="Listener" doc:id="5bf061b8-9f2b-4ad8-847a-2470bc7ce376" config-ref="HTTP_Listener_config" path="/github"/>
 		<set-payload value="#['hello Mr. git']" doc:name="Set Payload" doc:id="c93d8750-fc9c-4571-a15a-09a10991578e" />
 		<logger level="INFO" doc:name="Logger" doc:id="0b7cf8ad-2f22-4bbb-99c5-eed38edfd8d4" message="#[payload]"/>
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="c8fa5203-9af8-4f0f-a8c7-f7936ff1a96c" />
 	</flow>
 </mule>
